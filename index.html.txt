@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zenith — Learner & Collaborator</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Smooth scrolling for internal links
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          document.querySelector(link.getAttribute('href'))
+                  .scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+
+  <header id="home">
+    <div class="container">
+      <h1>Zenith</h1>
+      <p class="subtitle">17-year-old learner • Tech lover • History buff • Geopolitics enthusiast • Spiritual explorer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#collaborate">Collaborate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <img src="images/zenith.jpg" alt="Zenith Profile" class="profile-pic">
+      <p>Hi—I’m <strong>Zenith</strong>. At 17, I’m on a journey to:</p>
+      <ul>
+        <li>Deepen my <em>religion & spirituality</em> knowledge</li>
+        <li>Explore cutting-edge <em>tech & coding</em></li>
+        <li>Dive into <em>history</em> through books</li>
+        <li>Discuss <em>geopolitics</em> and global affairs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>What I’m Building</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Web Demos</h3>
+          <p>Simple HTML/CSS/JS experiments—interactive, responsive, fun.</p>
+        </div>
+        <div class="card">
+          <h3>Automation Scripts</h3>
+          <p>Python bots & tools to automate everyday tasks.</p>
+        </div>
+        <div class="card">
+          <h3>Research Projects</h3>
+          <p>Deep dives on history, religion, and geopolitics analyses.</p>
+        </div>
+        <div class="card">
+          <h3>Design Mockups</h3>
+          <p>Visual ideas in Figma or Canva—UI concepts, posters, infographics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collaborate">
+    <div class="container">
+      <h2>Let’s Collaborate</h2>
+      <p>Whether you’re a dev, designer, or fellow researcher, I’m eager to team up on any project—big or small. Got an idea? Let’s bring it to life!</p>
+      <a class="btn" href="#contact">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:fromthevalleyofeast@gmail.com">fromthevalleyofeast@gmail.com</a></p>
+      <div class="social">
+        <a href="https://github.com/zenith" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/zenith" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Zenith. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

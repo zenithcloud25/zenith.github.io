@@ -1,0 +1,68 @@
+/* Reset & Globals */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+.container { width: 90%; max-width: 800px; margin: auto; }
+
+/* Header */
+header {
+  background: #282c34;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+header h1 { font-size: 3rem; }
+header .subtitle { margin-top: 10px; font-size: 1.1rem; opacity: 0.8; }
+header nav { margin-top: 20px; }
+header nav a {
+  color: #61dafb;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+section { padding: 60px 0; background: #fff; margin-bottom: 20px; border-radius: 8px; }
+/* Alternate background */
+section:nth-of-type(even) { background: #eef2f5; }
+
+/* About */
+.profile-pic {
+  width: 140px; height: 140px;
+  border-radius: 50%;
+  display: block; margin: 20px auto;
+}
+
+/* Skills Grid */
+#skills .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  background: #fff; padding: 20px; border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card h3 { margin-bottom: 10px; }
+
+/* Buttons */
+.btn {
+  display: inline-block; margin-top: 20px;
+  padding: 12px 24px; background: #61dafb; color: #282c34;
+  text-decoration: none; border-radius: 4px; font-weight: bold;
+}
+
+/* Contact & Social */
+.social a {
+  margin: 0 10px; color: #282c34; text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+footer { background: #282c34; color: #fff; text-align: center; padding: 20px 0; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  #skills .grid { grid-template-columns: 1fr; }
+  header h1 { font-size: 2.5rem; }
+}
